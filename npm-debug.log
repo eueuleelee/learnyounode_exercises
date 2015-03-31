@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'fs' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 silly cache add args [ 'fs', null ]
+5 verbose cache add spec fs
+6 silly cache add parsed spec { raw: 'fs',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'fs',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed fs@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'fs', range: '*', hasData: false }
+11 silly mapToRegistry name fs
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/fs
+15 verbose addNameRange registry:https://registry.npmjs.org/fs not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/fs
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 1:59:18 PM
+19 verbose request id f4ad97454df04511
+20 http request GET https://registry.npmjs.org/fs
+21 http 200 https://registry.npmjs.org/fs
+22 silly get cb [ 200,
+22 silly get   { date: 'Tue, 31 Mar 2015 05:59:19 GMT',
+22 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"3L31VQWPYJLGLUTV9OUYSCJRB"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '1577',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     'x-served-by': 'cache-hkg6824-HKG',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1427781558.827562,VS0,VE958',
+22 silly get     vary: 'Accept',
+22 silly get     'keep-alive': 'timeout=10, max=50',
+22 silly get     connection: 'Keep-Alive' } ]
+23 verbose get saving fs to /Users/eunicelee/.npm/registry.npmjs.org/fs/.cache.json
+24 silly addNameRange number 2 { name: 'fs', range: '*', hasData: true }
+25 silly addNameRange versions [ 'fs', [ '0.0.0', '0.0.2' ] ]
+26 verbose addNamed fs@0.0.2
+27 silly addNamed semver.valid 0.0.2
+28 silly addNamed semver.validRange 0.0.2
+29 silly mapToRegistry name fs
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/fs
+33 verbose addRemoteTarball https://registry.npmjs.org/fs/-/fs-0.0.2.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/fs/-/fs-0.0.2.tgz',
+34 verbose addRemoteTarball   'e1f244ef3933c1b2a64bd4799136060d0f5914f8' ]
+35 info retry fetch attempt 1 at 1:59:19 PM
+36 info attempt registry request try #1 at 1:59:19 PM
+37 http fetch GET https://registry.npmjs.org/fs/-/fs-0.0.2.tgz
+38 http fetch 200 https://registry.npmjs.org/fs/-/fs-0.0.2.tgz
+39 silly fetchAndShaCheck shasum e1f244ef3933c1b2a64bd4799136060d0f5914f8
+40 verbose addTmpTarball /var/folders/mt/b32044tx3yj3rx8vx3qgqq4h0000gn/T/npm-14134-a343de68/registry.npmjs.org/fs/-/fs-0.0.2.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for fs@0.0.2
+42 silly cache afterAdd fs@0.0.2
+43 verbose afterAdd /Users/eunicelee/.npm/fs/0.0.2/package/package.json not in flight; writing
+44 verbose afterAdd /Users/eunicelee/.npm/fs/0.0.2/package/package.json written
+45 silly install resolved [ { name: 'fs',
+45 silly install resolved     version: '0.0.2',
+45 silly install resolved     description: '',
+45 silly install resolved     main: 'index.js',
+45 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+45 silly install resolved     author: '',
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     _id: 'fs@0.0.2',
+45 silly install resolved     _shasum: 'e1f244ef3933c1b2a64bd4799136060d0f5914f8',
+45 silly install resolved     _from: 'fs@*',
+45 silly install resolved     _npmVersion: '1.4.14',
+45 silly install resolved     _npmUser: { name: 'alsotang', email: 'alsotang@gmail.com' },
+45 silly install resolved     maintainers: [ [Object] ],
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: 'e1f244ef3933c1b2a64bd4799136060d0f5914f8',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/fs/-/fs-0.0.2.tgz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/fs/-/fs-0.0.2.tgz' } ]
+46 info install fs@0.0.2 into /Users/eunicelee/projects/learnyounode
+47 info installOne fs@0.0.2
+48 verbose installOne of fs to /Users/eunicelee/projects/learnyounode not in flight; installing
+49 warn locking Error: EACCES, open '/Users/eunicelee/.npm/_locks/fs-a3bd53a8bdfaacc6.lock'
+49 warn locking     at Error (native)
+49 warn locking  /Users/eunicelee/.npm/_locks/fs-a3bd53a8bdfaacc6.lock failed { [Error: EACCES, open '/Users/eunicelee/.npm/_locks/fs-a3bd53a8bdfaacc6.lock']
+49 warn locking   errno: -13,
+49 warn locking   code: 'EACCES',
+49 warn locking   path: '/Users/eunicelee/.npm/_locks/fs-a3bd53a8bdfaacc6.lock' }
+50 verbose stack Error: Attempt to unlock /Users/eunicelee/projects/learnyounode/node_modules/fs, which hasn't been locked
+50 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+50 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:929:5)
+50 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:933:20
+50 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+50 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+50 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+50 verbose stack     at FSReqWrap.oncomplete (fs.js:99:15)
+51 verbose cwd /Users/eunicelee/projects/learnyounode
+52 error Darwin 14.1.1
+53 error argv "node" "/usr/local/bin/npm" "install" "fs"
+54 error node v0.12.0
+55 error npm  v2.5.1
+56 error Attempt to unlock /Users/eunicelee/projects/learnyounode/node_modules/fs, which hasn't been locked
+57 error If you need help, you may report this error at:
+57 error     <http://github.com/npm/npm/issues>
+58 verbose exit [ 1, true ]
